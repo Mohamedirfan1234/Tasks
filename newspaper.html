@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newspaper Blog</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+        color: #333;
+      }
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        background-color: #555;
+      }
+      nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+      nav a:hover {
+        background-color: #111;
+      }
+      main {
+        padding: 20px;
+      }
+      .article {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .article:hover {
+        transform: scale(1.02);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+      }
+      .article h2 {
+        margin-top: 0;
+      }
+      .article p {
+        line-height: 1.6;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Today's News</h1>
+    </header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#world">World</a>
+      <a href="#tech">Tech</a>
+      <a href="#sports">Sports</a>
+      <a href="#entertainment">Entertainment</a>
+    </nav>
+    <main>
+      <div class="article" id="home">
+        <h2>New Park Opens in Downtown</h2>
+        <p>
+          A new park has opened in downtown, providing a green space for
+          families to enjoy. The park features playgrounds, walking trails, and
+          picnic areas, making it a perfect spot for a day out.
+        </p>
+      </div>
+      <div class="article" id="world">
+        <h2>Global Summit on Climate Change</h2>
+        <p>
+          World leaders have gathered for a global summit on climate change. The
+          summit aims to address the urgent need for environmental protection
+          and sustainable development, with new policies expected to be
+          announced.
+        </p>
+      </div>
+      <div class="article" id="tech">
+        <h2>Breakthrough in Artificial Intelligence</h2>
+        <p>
+          Scientists have announced a breakthrough in artificial intelligence,
+          unveiling a new AI system capable of performing complex tasks with
+          unprecedented accuracy. The development is expected to revolutionize
+          various industries.
+        </p>
+      </div>
+      <div class="article" id="sports">
+        <h2>City Marathon Draws Thousands</h2>
+        <p>
+          The annual city marathon drew thousands of participants this year,
+          with runners from all over the world competing in the event. The
+          marathon route showcased the city's landmarks and scenic views.
+        </p>
+      </div>
+      <div class="article" id="entertainment">
+        <h2>New Movie Breaks Box Office Records</h2>
+        <p>
+          A new movie has broken box office records, becoming the
+          highest-grossing film of the year. The film's captivating storyline
+          and stunning visuals have received rave reviews from both critics and
+          audiences.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2025 Newspaper Blog</p>
+    </footer>
+  </body>
+</html>
