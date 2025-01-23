@@ -1,0 +1,157 @@
+/* General Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main App Container */
+.App {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Title Styling */
+h1 {
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Input Section */
+.todo-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.todo-input input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0px 0px 5px rgba(79, 70, 229, 0.5);
+}
+
+.todo-input button {
+  padding: 12px 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.todo-input button:hover {
+  background-color: #3b37c3;
+}
+
+/* Todo List Styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.todo-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.todo-text span {
+  font-size: 1rem;
+  color: #333333;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Input for Editing Todos */
+.edit-input {
+  padding: 8px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Action Buttons */
+.todo-actions button {
+  padding: 8px 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.todo-actions button:hover {
+  background-color: #3b37c3;
+}
+
+.todo-actions .delete-btn {
+  background-color: #ef4444;
+}
+
+.todo-actions .delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
