@@ -1,4 +1,4 @@
-/* General Body Styling */
+
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #6a11cb, #2575fc);
@@ -10,7 +10,7 @@ body {
   padding: 0;
 }
 
-/* Main App Container */
+
 .App {
   background: #ffffff;
   padding: 30px;
@@ -22,14 +22,14 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Title Styling */
+
 h1 {
   color: #4a4a4a;
   margin-bottom: 20px;
   font-size: 2rem;
 }
 
-/* Input Section */
+
 .todo-input {
   display: flex;
   justify-content: space-between;
@@ -66,7 +66,7 @@ h1 {
   background-color: #3b37c3;
 }
 
-/* Todo List Styling */
+
 .todo-list {
   list-style: none;
   padding: 0;
@@ -101,7 +101,7 @@ h1 {
   color: #9ca3af;
 }
 
-/* Input for Editing Todos */
+
 .edit-input {
   padding: 8px;
   border: 2px solid #d1d5db;
@@ -109,7 +109,7 @@ h1 {
   font-size: 14px;
 }
 
-/* Action Buttons */
+
 .todo-actions button {
   padding: 8px 12px;
   background: #4f46e5;
@@ -133,7 +133,7 @@ h1 {
   background-color: #dc2626;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
