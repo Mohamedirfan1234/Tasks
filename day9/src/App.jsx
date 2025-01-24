@@ -1,11 +1,11 @@
 import React, { useRef, useState } from "react";
-import "./App.css"; // Add this for styling if needed
+import "./App.css"; 
 
 function App() {
-  const inputRef = useRef(null); // Ref for text box
-  const timerIdRef = useRef(null); // Ref for timer ID
-  const [timer, setTimer] = useState(10); // State for timer countdown
-  const [isRunning, setIsRunning] = useState(false); // State to track if the timer is running
+  const inputRef = useRef(null);
+  const timerIdRef = useRef(null); 
+  const [timer, setTimer] = useState(10); 
+  const [isRunning, setIsRunning] = useState(false); 
 
   const focusTextBox = () => {
     if (inputRef.current) {
@@ -74,3 +74,4 @@ function App() {
 }
 
 export default App;
+
